@@ -2,6 +2,9 @@
 <%= form_for(@step, :url => steps_path) do |f| %>
 	<%= f.label :title %>
 	<%= f.text_field :title %>
+	<br/><br/>
+	<%= f.label :post %>
+	<%= f.text_field :post %>
 
 	<%= f.submit "Submit" %>
 
