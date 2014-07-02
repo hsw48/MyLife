@@ -8,7 +8,9 @@ Rails.application.routes.draw do
 resources :users, :only => [:index]
 
 
-resources :steps, :only => [:index]
+resources :steps, :only => [:index, :new]
+
+resources :home, :only => [:index]
 
 
 
@@ -18,7 +20,7 @@ resources :steps, :only => [:index]
 
   # You can have the root of your site routed with "root"
   
-  # root 'users#sign_in'
+  root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
