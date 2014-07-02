@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 resources :users, :only => [:index]
 
 
-resources :steps, :only => [:index, :new]
+resources :steps, :only => [:index, :new, :create, :destroy]
 
 resources :home, :only => [:index]
 

@@ -14,12 +14,19 @@ before_action :authenticate_user!
 	def create
 		@step = Step.new(step_params)
 		@step.save
+		redirect_to steps_path
+	end
+	def destroy
+		@step = Step.find(params[:id])
+		@step.destroy
+
+		redirect_to steps_path
 	end
 
 	private
 
 	def step_params
-		params.require(:step)
+		params.require(:step).permit(:title)
 	end
 	
 

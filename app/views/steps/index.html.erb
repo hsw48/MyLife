@@ -2,5 +2,13 @@
 
 <div>
 
+<% @steps.each do |step| %>
+	<li>
+		<%= link_to "delete", step_path(step), :method => :delete %>
+
+		<%= step.title %>
+	</li>
+<% end %>
 
 </div>
+
