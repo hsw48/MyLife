@@ -26,7 +26,7 @@ before_action :authenticate_user!
 	private
 
 	def step_params
-		params.require(:step).permit(:title)
+		params.require(:step).permit(:title, :post)
 	end
 	
 
