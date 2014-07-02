@@ -12,6 +12,8 @@ resources :steps, :only => [:index, :new, :create, :destroy]
 
 resources :homes, :only => [:index]
 
+resources :posts, :only => [:index]
+
 
 
 

@@ -4,7 +4,10 @@
 	<%= f.text_field :title %>
 	<br/><br/>
 	<%= f.label :post %>
-	<%= f.text_field :post %>
+
+	<br/>
+	
+	<%= f.text_area :post, :cols => "50", :rows => "10" %>
 
 	<%= f.submit "Submit" %>
 
