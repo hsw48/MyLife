@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# gem 'better-errors'
+
 gem 'devise'
 
 gem 'pry'
