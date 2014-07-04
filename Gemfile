@@ -1,12 +1,17 @@
 source 'https://rubygems.org'
 
-# gem 'better-errors'
+
+group :development do 
+	gem 'jazz_hands'
+	gem 'better_errors' 
+	gem 'puma'
+end 
 
 gem 'devise'
 
-gem 'pry'
-
 gem 'bootstrap-sass'
+
+gem 'autoprefixer-rails'	
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'

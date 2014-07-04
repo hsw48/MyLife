@@ -23,6 +23,13 @@ before_action :authenticate_user!
 		redirect_to steps_path
 	end
 
+	def show
+
+		@step = Step.where(:step_id => params[:id])
+		#how to incorporate :post ???
+	
+	end 
+
 	private
 
 	def step_params

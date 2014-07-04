@@ -7,14 +7,14 @@
 	<li>
 		<%= link_to "delete", step_path(step), :method => :delete %>
 
-		<%= step.title %>
+		<%= link_to step.title, step_path(step), :method => :get %>
 
 		</br></br>
 
 				
 	</li>
 <% end %>
-
+ 
 </br></br>
 
 <%= link_to "Back", :back %>

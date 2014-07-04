@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140702163944) do
+ActiveRecord::Schema.define(version: 20140703210034) do
+
+  create_table "posts", force: true do |t|
+    t.integer  "step_id"
+    t.integer  "tag_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "steps", force: true do |t|
     t.string   "title"
