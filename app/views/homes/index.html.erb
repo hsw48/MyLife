@@ -1,20 +1,40 @@
-<h1>My Life</h1>
+<head>
+	<title>My Life Home Page</title>
+	<link rel="stylesheet" href="../../assets/stylesheets/home.css" type="text/css">
+</head>
 
-<div>
+<h1 class="homemylife">My Life</h1>
+
+
+<table class ="hometable">
+	<tr>
+		<td>
+		</td>
+		<td>
+			<div class="homecreatenewstepbutton">
 	<%= link_to "Create New", new_step_path, class: 'btn btn-info' %>
 
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+<div class="homereminisce">
+	<h2>Reminisce</h2>
 </div>
-<div><h2>Reminisce</h2></div>
+</td>
+	<td>
+<div class="homebrowse">
+	<h2>Browse</h2>
+</div>
+</td>
+</tr>
+<tr>
+	<td>
+<div class="homeprompts">
+	<h2>Prompts</h2>
+</div>
+</td>
+</tr>
+</table>
 
-<div>Browse</div>
-<div>Prompts</div>
-
-
-"/posts/new?step_id=#{params[:id]}"
-
-
-
-# posts/new
-params[:step_id]
-
-hidden input html

@@ -1,11 +1,6 @@
 source 'https://rubygems.org'
 
 
-group :development do 
-	gem 'jazz_hands'
-	gem 'better_errors' 
-	gem 'puma'
-end 
 
 gem 'devise'
 
@@ -48,5 +43,5 @@ gem 'spring',        group: :development
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+#gem 'debugger', group: [:development, :test]
 

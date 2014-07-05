@@ -3,15 +3,17 @@
 
 <%= form_for(@step, :url => steps_path) do |f| %>
 	<%= f.label :title %>
-	<%= f.text_field :title %>
+	<%= f.text_field :title, :size => "40" %>
 
 <br/><br/>
 
 <%= label_tag :body %>
+<br/>
 <%= text_area_tag :body, nil, :cols => "50", :rows => "10" %>
-
+<br/>
 <%= f.submit "Submit" %>
-
+<br/><br/>
+<%= link_to "Back", "/" %> 
 
 
 <% end %>

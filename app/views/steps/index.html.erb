@@ -1,8 +1,11 @@
 
+<div>
+<%= link_to "Home", "/" %> 
+</div>
+
 <h1>Steps</h1>
 
 <div>
-
 <% @steps.each do |step| %>
 	<li>
 		<%= link_to "delete", step_path(step), :method => :delete %>
@@ -15,7 +18,7 @@
 	</li>
 <% end %>
  
-</br></br>
+</br>
 
 <%= link_to "Back", :back %>
 
