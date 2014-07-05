@@ -1,12 +1,12 @@
 
 <h1>Add a Post</h1>
 
-
-
-<%= form_for @post, :url => "/posts/new?step_id=#{params[:id]}" do |f| %>
+<%= form_for(@post) do |f| %>
 	<%= f.label "New Post" %>
-	<%= f.text_field :body %>
+	<input type="hidden" name="step_id" value=<%= params[:step_id] %>>
+</br>
 
+<%= text_area_tag :body, nil, :cols => "50", :rows => "5" %>
 <%= f.submit "Submit" %>
 
 <% end %>
