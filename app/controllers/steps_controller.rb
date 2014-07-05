@@ -12,7 +12,6 @@ before_action :authenticate_user!
 	end
 	
 	def create
-		
 		@step = Step.new(step_params)
 
 		@post = Post.new(:body => params[:body])
@@ -33,7 +32,7 @@ before_action :authenticate_user!
 
 	def show
 		@step = Step.find(params[:id])
-		#how to incorporate :post ???
+		
 	end 
 
 	private

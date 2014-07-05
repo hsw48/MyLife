@@ -12,7 +12,7 @@ resources :steps, :only => [:index, :new, :create, :destroy, :show]
 
 resources :homes, :only => [:index]
 
-resources :posts, :only => [:index, :show, :new]
+resources :posts, :only => [:index, :show, :new, :create]
 
 
 
