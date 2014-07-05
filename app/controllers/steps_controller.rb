@@ -12,10 +12,18 @@ before_action :authenticate_user!
 	end
 	
 	def create
+		
 		@step = Step.new(step_params)
+
+		@post = Post.new(:body => params[:body])
+		@post.save
+
+		@step.posts << @post
+
 		@step.save
 		redirect_to steps_path
 	end
+
 	def destroy
 		@step = Step.find(params[:id])
 		@step.destroy
@@ -24,10 +32,8 @@ before_action :authenticate_user!
 	end
 
 	def show
-
-		@step = Step.where(:step_id => params[:id])
+		@step = Step.find(params[:id])
 		#how to incorporate :post ???
-	
 	end 
 
 	private

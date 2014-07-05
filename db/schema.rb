@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140703210034) do
+ActiveRecord::Schema.define(version: 20140704150756) do
 
   create_table "posts", force: true do |t|
     t.integer  "step_id"
     t.integer  "tag_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "body"
   end
 
   create_table "steps", force: true do |t|
@@ -25,7 +26,6 @@ ActiveRecord::Schema.define(version: 20140703210034) do
     t.string   "tags"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "post"
   end
 
   create_table "users", force: true do |t|

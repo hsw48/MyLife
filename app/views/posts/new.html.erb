@@ -1,0 +1,12 @@
+
+<h1>Add a Post</h1>
+
+
+
+<%= form_for @post, :url => "/posts/new?step_id=#{params[:id]}" do |f| %>
+	<%= f.label "New Post" %>
+	<%= f.text_field :body %>
+
+<%= f.submit "Submit" %>
+
+<% end %>

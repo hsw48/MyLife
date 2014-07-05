@@ -1,10 +1,20 @@
 <h1>My Life</h1>
 
 <div>
-	<%= link_to "Create New", new_step_path %>
+	<%= link_to "Create New", new_step_path, class: 'btn btn-info' %>
 
 </div>
 <div><h2>Reminisce</h2></div>
 
 <div>Browse</div>
 <div>Prompts</div>
+
+
+"/posts/new?step_id=#{params[:id]}"
+
+
+
+# posts/new
+params[:step_id]
+
+hidden input html

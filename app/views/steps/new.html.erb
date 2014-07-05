@@ -1,14 +1,17 @@
 <h1>New Step</h1>
+
+
 <%= form_for(@step, :url => steps_path) do |f| %>
 	<%= f.label :title %>
 	<%= f.text_field :title %>
-	<br/><br/>
-	<%= f.label :post %>
 
-	<br/>
-	
-	<%= f.text_area :post, :cols => "50", :rows => "10" %>
+<br/><br/>
 
-	<%= f.submit "Submit" %>
+<%= label_tag :body %>
+<%= text_area_tag :body, nil, :cols => "50", :rows => "10" %>
+
+<%= f.submit "Submit" %>
+
+
 
 <% end %>
