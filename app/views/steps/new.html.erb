@@ -1,3 +1,7 @@
+
+
+
+
 <%= link_to "Back", "/" %> 
 
 <h1>New Step</h1>
@@ -8,8 +12,8 @@
 
 <br/><br/>
 
-<%= f.label :date %>
-	<%= f.text_field :created_at, :size => "40" %>
+<%= f.label :event_date %>
+	<%= f.date_field :event_date, :size => "40", class: 'date_field_input' %>
 
 
 <br/><br/>
@@ -24,3 +28,7 @@
 
 
 <% end %>
+
+
+
+

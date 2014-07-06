@@ -12,12 +12,18 @@
 	<li>
 		<%= link_to step.title, step_path(step), :method => :get %>
 		</br>
-		<%= step.created_at  %> 
 	</li>
 		<p class="stepsdeletebutton">
 		<%= link_to "delete", step_path(step), :method => :delete %>
+		</br>
+
+
+		Date:	<%= step.event_date.strftime("%m/%d/%y") %> 
+
+
+
+
 		</p>
-	Created at: <%= step.created_at %>
 	<hr color="#8DB477"/>
 	
 <% end %>

@@ -17,6 +17,10 @@
 	</td>
 	<td class="homebrowse">
 		<h2>Browse</h2>
+
+		<!-- Look at steps to find out all the years that there are steps for -->
+		<!-- Loop through years, and create a link for each one -->
+		<!-- Each link should go to "/step?year=..." -->
 	</td>
 </tr>
 <tr>
@@ -24,6 +28,13 @@
 		
 	</td>
 	<td class="homebrowsebox">
+
+		<%= link_to "2014", steps_path, class: 'btn btn-info'  %>
+		</br>				
+		</br>
+
+		<%= link_to "2013", steps_path, class: 'btn btn-info'  %>		
+
 	</td>
 </tr>
 </table>
