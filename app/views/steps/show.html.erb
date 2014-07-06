@@ -6,31 +6,24 @@
 <h3>Posts:</h3>
 
 <%= link_to "Add Post", "/posts/new?step_id=#{params[:id]}", class: 'btn btn-info' %>
-
-
-</br>
-</br>
-
-
-
-
+</br></br>
 
 <p>
-
 
 <% @step.posts.each do |post| %>
 <div>
 	<%= post.body %>
+</div>
+
+<div class="postsdeletebutton">
 	<%= link_to "delete", post_path(post), :method => :delete %>
 </div>
 
+<hr color="#8DB477"/>
+
 <% end %>
 
-
 </p>
-
-
-
 <%= link_to "Back", "/steps" %> 
 
 
