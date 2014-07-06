@@ -24,12 +24,10 @@ class PostsController < ApplicationController
 
 	def destroy
 		@post = Post.find(params[:id])
-		@post.destroy
-
-		redirect_to "/steps/#{params[:step_id]}"
+		@post.destroy   
+		redirect_to "/steps/#{@post.step_id}"
 	end 
 
-	
 	# private
 
 	# def step_params

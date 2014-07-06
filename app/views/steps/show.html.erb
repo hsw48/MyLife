@@ -17,7 +17,6 @@
 <% @step.posts.each do |post| %>
 <div>
 	<%= post.body %>
-
 	<%= link_to "delete", post_path(post), :method => :delete %>
 </div>
 
@@ -28,8 +27,6 @@
 
 
 
-
-
-
-
 <%= link_to "Back", "/steps" %> 
+
+
