@@ -4,6 +4,7 @@ before_action :authenticate_user!
 
 
 	def index
+
 		@steps = Step.all
 	end
 
@@ -30,8 +31,9 @@ before_action :authenticate_user!
 		redirect_to steps_path
 	end
 
-	def show
+	def show 
 		@step = Step.find(params[:id])
+		 
 		
 	end 
 
