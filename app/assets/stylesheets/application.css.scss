@@ -23,19 +23,18 @@ a:hover {color: #8DB477; text-decoration: underline}
 .signin {text-align: right;}
 
 /* Home Page */
+.homecreatenewstepbutton {text-align: right}
 .btn {background-color:#8DB477;}
+
 .homemylife {}
 
-.homecreatenewstepbutton {text-align: right; padding-right: 5%;}
-.hometdleft {width:80%;}
-.hometdright {width:30%;height:500px;}
-.homereminiscetable {table-layout: fixed;width:70%;margin:2%;}
-.homebrowsetable {table-layout: fixed;width: 20%;margin:2%;}
-.homepromptstable {table-layout: fixed;width:90%;margin:2%;}
+.hometable {table-layout: fixed;width:100%;padding:5%;}
+
+.homebrowse {text-align: right}
+
+.homepromptstable {table-layout: fixed;width:90%;margin:5%;}
 
 .homereminiscebox {border: #78684e solid 2px; padding:5%;}
-
-
 
 .homebrowsebox {border: #78684e solid 2px; padding:5%;}
 
@@ -47,6 +46,8 @@ a:hover {color: #8DB477; text-decoration: underline}
 
 hr {height:1px;}
 
+/* Posts Page */
+.postsdeletebutton {text-align: right}
 
 
 

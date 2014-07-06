@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'jazz_hands'
-
 gem 'better_errors'
 
 gem 'devise'
