@@ -13,7 +13,7 @@ class PostsController < ApplicationController
 
 		# redirect to the step that we just added a post to
 
-		raise
+		
 		# redirect_to "/steps/#{params[:]}"
 	end
 

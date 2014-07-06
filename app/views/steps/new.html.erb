@@ -1,5 +1,6 @@
-<h1>New Step</h1>
+<%= link_to "Back", "/" %> 
 
+<h1>New Step</h1>
 
 <%= form_for(@step, :url => steps_path) do |f| %>
 	<%= f.label :title %>
@@ -13,7 +14,7 @@
 <br/>
 <%= f.submit "Submit" %>
 <br/><br/>
-<%= link_to "Back", "/" %> 
+
 
 
 <% end %>

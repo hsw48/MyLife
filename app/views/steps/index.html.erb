@@ -4,22 +4,23 @@
 </div>
 
 <h1>Steps</h1>
-
+<div class="homecreatenewstepbutton">
+				<%= link_to "Create New", new_step_path, class: 'btn btn-info' %>
+</div>
 <div>
 <% @steps.each do |step| %>
 	<li>
-		<%= link_to "delete", step_path(step), :method => :delete %>
-
 		<%= link_to step.title, step_path(step), :method => :get %>
-
-		</br></br>
-
-				
 	</li>
+		<p class="stepsdeletebutton">
+		<%= link_to "delete", step_path(step), :method => :delete %>
+		</p>
+	
+	<hr color="#8DB477"/>
+	
 <% end %>
  
 </br>
 
-<%= link_to "Back", :back %>
 
 </div>

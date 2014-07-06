@@ -6,7 +6,7 @@
 /* Whole Site */
 
 body { 
-background-color: #98A349;
+background-color: #8DB477;
 }
 
 div { border-radius: 10px;
@@ -18,15 +18,37 @@ h1, h2, li, a {font-family: 'Roboto Slab', serif;
 color: #78684e;
 }
 
-a:hover {color: #98A349; text-decoration: underline}
+a:hover {color: #8DB477; text-decoration: underline}
+
+.signin {text-align: right;}
+
 /* Home Page */
+.btn {background-color:#8DB477;}
 .homemylife {}
 
-.hometable {width: 100%;border-color: #78684e; border-width: 10px;}
+.homecreatenewstepbutton {text-align: right; padding-right: 5%;}
+.hometdleft {width:80%;}
+.hometdright {width:30%;height:500px;}
+.homereminiscetable {table-layout: fixed;width:70%;margin:2%;}
+.homebrowsetable {table-layout: fixed;width: 20%;margin:2%;}
+.homepromptstable {table-layout: fixed;width:90%;margin:2%;}
 
-.homecreatenewstepbutton {text-align: right; padding-right: 5%}
+.homereminiscebox {border: #78684e solid 2px; padding:5%;}
 
-.homebrowse {text-align: right;padding-right: 5%}
+
+
+.homebrowsebox {border: #78684e solid 2px; padding:5%;}
+
+.homepromptsbox {border: #78684e solid 2px; padding:5%;}
+
+/* Steps Page */
+
+.stepsdeletebutton {text-align: right}
+
+hr {height:1px;}
+
+
+
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
