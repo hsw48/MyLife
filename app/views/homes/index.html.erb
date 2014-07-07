@@ -4,109 +4,37 @@
 </head>
 
 <h1 class="homemylife">My Life</h1>
+<p class="hometurtle">
+	<%= image_tag "turtle.png" %>
+</p>
 
 <div class="homecreatenewstepbutton">
 				<%= link_to "Create New", new_step_path, class: 'btn btn-info' %>
 </div>
 
 
-<table class="hometable">
-<tr>
-	<td class="homereminisce">
+	<div class="homereminisce">
 		<h2>Reminisce</h2>
-	</td>
-	<td class="homebrowse">
+	</div>
+	<div class="homebrowse">
 		<h2>Browse</h2>
-
-		<!-- Look at steps to find out all the years that there are steps for -->
-		<!-- Loop through years, and create a link for each one -->
-		<!-- Each link should go to "/step?year=..." -->
-	</td>
-</tr>
-<tr>
-	<td class="homereminiscebox">
-		
-	</td>
-	<td class="homebrowsebox">
-
-	<!-- pseudo code
-	store all of the years in an array (probably in model) called years_array
-	eliminate duplicates (unique method)
-	order years in the array
-
-	in view: iterate over array to generate links -->
+	</div>
+	<div class="homereminiscebox">
+	</div>
 	
-	<ul>
-		<%= @years_array.each do |year|  %>
-		<li>
-			<%= link_to year.to_s, "/steps/", :method => :get %> 
-		</li>
-	</ul>
+	<div class="homebrowsebox">
+		<ul>
+			<%= @years_array.each do |year|  %>
+			<li>	
+				<%= link_to year.to_s, "/steps/", :method => :get %> 
+			</li>
+		</ul>
+		<% end  %> 
+	</div>
 
-	<% end  %> 
-
-	
-
-
-
-	</td>
-</tr>
-</table>
-<table class="homepromptstable">
-	<tr>
-		<td>
-			<h2>Prompts</h2>
-		</td>
-	</tr>
-	<tr>
-		<td class="homepromptsbox">
-		</td>
-	</tr>
-</table>
-
-<!-- <table class="hometable">
-	<tr>
-		<td class="hometdleft">
-			<table class="homereminiscetable">
-				<tr>
-					<td>
-						<h2>Reminisce</h2>
-					</td>
-				</tr>
-				<tr>
-					<td class="homereminiscebox">
-					</td>
-				</tr>
-			</table>
-		</td>
-		<td class="hometdright">
-			<table class="homebrowsetable">
-				<tr>
-					<td>
-						<h2>Browse</h2>
-					</td>
-				</tr>
-				<tr>
-					<td class="homebrowsebox">
-					</td>
-				</tr>
-			</table>
-		</td>
-	</tr>
-</table>
-<table class="homepromptstable">
-	<tr>
-		<td>
-			<h2>Prompts</h2>
-		</td>
-	</tr>
-	<tr>
-		<td class="homepromptsbox">
-		</td>
-	</tr>
-</table>
- -->
-
-
-
+<div class="homeprompts">
+	<h2>Prompts</h2>
+</div>
+<div class="homepromptsbox">
+</div>
 

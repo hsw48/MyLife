@@ -5,7 +5,7 @@
 
 /* Whole Site */
 .alert {padding:0;margin:0;}
-body {background-color: #8DB477;margin:2%;}
+body {background-color: #8DB477;margin:3%;}
 
 div {border-radius: 10px;background-color: #DDDABE;}
 
@@ -25,21 +25,19 @@ a:hover {color: #8DB477; text-decoration: underline}
 .welcometurtle {text-align: center}
 
 /* Home Page */
-
+.container {padding:3%;}
+.hometurtle {text-align: center}
 .homecreatenewstepbutton {text-align: right}
 .btn {background-color:#8DB477;}
 
 .homemylife {}
 
-.hometable {table-layout: fixed;width:100%;padding:5%;}
+.homereminisce {width:60%;display:inline-block;}
+.homebrowse {width:30%;display:inline-block;text-align: right}
 
-.homebrowse {text-align: right}
+.homereminiscebox {border: #78684e solid 2px; width:50%;padding:5%;display:inline-block;height:150px;}
 
-.homepromptstable {table-layout: fixed;width:90%;margin:5%;}
-
-.homereminiscebox {border: #78684e solid 2px; padding:5%;}
-
-.homebrowsebox {border: #78684e solid 2px; padding:5%;}
+.homebrowsebox {border: #78684e solid 2px;display:inline-block;width:30%;padding:5%;float: right}
 
 .homepromptsbox {border: #78684e solid 2px; padding:5%;}
 
