@@ -30,7 +30,11 @@ class HomesController < ApplicationController
 						"What was your biggest high school or college regret?", 
 						"Describe an instance where one of your core beliefs was changed.", 
 						"Who was your favorite high school or college teacher and why?", 
-						"What is your favorite high school extracurricular memory?", 
+						"What is your favorite high school extracurricular memory?",
+						"Who was your biggest childhood celebrity crush?",
+						"What do you think your parents could have done a better job of?",
+						"When was the first time you fell in love?",
+						"What do you wish you spent more time doing as a kid?" 
 
 						]	
 

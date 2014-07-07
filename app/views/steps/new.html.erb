@@ -2,10 +2,10 @@
 
 
 
-<%= link_to image_tag('turtle.png'), "/homes" %> 
+<%= link_to "Back", "/homes" %> 
 
 <h1>New Step</h1>
-<p class="stepinfo">"Small steps lead to big change." -Biggie <%= image_tag "turtle.png"%> </p>
+<p class="stepinfo">"Small steps lead to big change."<%= image_tag "turtle.png"%> </p>
 
 <%= form_for(@step, :url => steps_path) do |f| %>
 	<%= f.label :title %>

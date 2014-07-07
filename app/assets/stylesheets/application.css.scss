@@ -8,10 +8,10 @@
 body {background-color: #8DB477;margin:3%;}
 
 div {border-radius: 10px;background-color: #DDDABE;}
-
+li {list-style: none}
 h1 {text-align:center; text-decoration: underline;font-family: 'Pacifico', cursive;color: #78684e}
-
-h2, li, a, p {font-family: 'Roboto Slab', serif; color: #78684e;}
+a {font-size: 1.5em}
+h4, h2, li, a, p {font-family: 'Roboto Slab', serif; color: #78684e;}
 
 a:hover {color: #8DB477; text-decoration: underline}
 
@@ -20,7 +20,7 @@ a:hover {color: #8DB477; text-decoration: underline}
 /* Welcome Page */
 
 .welcomesignup {float:right;}
-.welcomeinfo {width:50%;text-align: right;float: right;}
+.welcomeinfo {width:75%;text-align: right;float: right;}
 .welcomehome {float:left;}
 .welcometurtle {text-align: center}
 
@@ -35,11 +35,13 @@ a:hover {color: #8DB477; text-decoration: underline}
 .homereminisce {width:60%;display:inline-block;}
 .homebrowse {width:30%;display:inline-block;text-align: right}
 
-.homereminiscebox {border: #78684e solid 2px; width:50%;padding:5%;display:inline-block;height:150px;}
+.homereminiscebox {border: #78684e solid 2px; width:65%;padding:5%;
+	display:inline-block;height:150px;}
 
-.homebrowsebox {border: #78684e solid 2px;display:inline-block;width:30%;padding:5%;float: right}
+.homebrowsebox {border: #78684e solid 2px;display:inline-block;width:30%;padding:5%;
+	float: right;font-size: 1.5em;list-style: none}
 
-.homepromptsbox {border: #78684e solid 2px; padding:5%;}
+.homepromptsbox {border: #78684e solid 2px; width:65%;padding:3%;padding-bottom: 0%}
 
 /* Steps Page */
 .stepinfo {text-align: center}
