@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails_12factor', group: :production
 
+gem 'binding_of_caller'
+
 gem 'better_errors'
 
 gem 'devise'

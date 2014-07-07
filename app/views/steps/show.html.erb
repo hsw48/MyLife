@@ -1,9 +1,8 @@
 
 
-<h1>Step Title</h1>
+<h1> <%= @step.title %> </h1>
 
 
-<h3>Posts:</h3>
 
 <%= link_to "Add Post", "/posts/new?step_id=#{params[:id]}", class: 'btn btn-info' %>
 </br></br>
@@ -18,7 +17,7 @@
 <div class="postsdeletebutton">
 	<%= link_to "delete", post_path(post), :method => :delete %>
 </div>
-Created at: <%= post.created_at %>
+Created at: <%= post.created_at.strftime("%m/%d/%y") %>
 <hr color="#8DB477"/>
 
 <% end %>

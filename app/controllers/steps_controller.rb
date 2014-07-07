@@ -4,6 +4,7 @@ before_action :authenticate_user!
 
 
 	def index
+
 		@steps = Step.all
 	end
 
@@ -30,15 +31,16 @@ before_action :authenticate_user!
 		redirect_to steps_path
 	end
 
-	def show
+	def show 
 		@step = Step.find(params[:id])
+		 
 		
 	end 
 
 	private
 
 	def step_params
-		params.require(:step).permit(:title, :post)
+		params.require(:step).permit(:title, :event_date)
 	end
 	
 
