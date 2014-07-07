@@ -29,11 +29,25 @@
 	</td>
 	<td class="homebrowsebox">
 
-		<%= link_to "2014", steps_path, class: 'btn btn-info'  %>
-		</br>				
-		</br>
+	<!-- pseudo code
+	store all of the years in an array (probably in model) called years_array
+	eliminate duplicates (unique method)
+	order years in the array
 
-		<%= link_to "2013", steps_path, class: 'btn btn-info'  %>		
+	in view: iterate over array to generate links -->
+	
+	<ul>
+		<%= @years_array.each do |year|  %>
+		<li>
+			<%= link_to year.to_s, "/steps/", :method => :get %> 
+		</li>
+	</ul>
+
+	<% end  %> 
+
+	
+
+
 
 	</td>
 </tr>
