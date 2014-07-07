@@ -37,7 +37,7 @@
 	in view: iterate over array to generate links -->
 	
 	<ul>
-		<%= @years_array.each do |year|  %>
+		<% @years_array.each do |year|  %>
 		<li>
 			<%= link_to year.to_s, "/steps/", :method => :get %> 
 		</li>
@@ -60,6 +60,20 @@
 	</tr>
 	<tr>
 		<td class="homepromptsbox">
+
+
+			<% @three_prompts %> 
+
+			<% @three_prompts.each do |prompt|  %>
+				<div>
+					<%= link_to prompt, new_step_path, class: 'btn btn-info'  %>
+				</div>
+
+				</br>
+				
+			<% end %>
+
+
 		</td>
 	</tr>
 </table>

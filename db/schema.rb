@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140706204816) do
+ActiveRecord::Schema.define(version: 20140707150825) do
 
   create_table "posts", force: true do |t|
     t.integer  "step_id"
@@ -21,12 +21,16 @@ ActiveRecord::Schema.define(version: 20140706204816) do
     t.text     "body"
   end
 
+  create_table "prompts", force: true do |t|
+    t.string "title"
+  end
+
   create_table "steps", force: true do |t|
     t.string   "title"
     t.string   "tags"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.date     "event_date", default: '2014-07-07'
+    t.date     "event_date", default: '2014-07-06'
   end
 
   create_table "users", force: true do |t|

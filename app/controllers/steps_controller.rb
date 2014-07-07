@@ -5,7 +5,7 @@ before_action :authenticate_user!
 
 	def index
 
-		@steps = Step.all
+		@steps = Step.all 
 	end
 
 	def new
