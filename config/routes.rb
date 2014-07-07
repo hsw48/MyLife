@@ -14,6 +14,8 @@ resources :homes, :only => [:index]
 
 resources :posts, :only => [:index, :show, :new, :create, :destroy]
 
+resources :welcomes, :only => [:index]
+
 
 
 
@@ -22,7 +24,7 @@ resources :posts, :only => [:index, :show, :new, :create, :destroy]
 
   # You can have the root of your site routed with "root"
   
-  root 'homes#index'
+  root 'welcomes#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
