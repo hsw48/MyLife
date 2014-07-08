@@ -5,6 +5,18 @@
 
 <h1>Steps</h1>
 
+	<%= form_tag "/steps", method: 'GET' do %>
+
+		<%= text_field_tag 'query', params[:query_steps], placeholder: "Search Steps" %>
+
+
+
+		<%= link_to "See all", "/steps" %>
+
+	<% end %>
+
+
+
 <div class="homecreatenewstepbutton">
 	<%= link_to "Create New", new_step_path, class: 'btn btn-info' %>
 </div>

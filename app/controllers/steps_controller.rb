@@ -5,7 +5,7 @@ before_action :authenticate_user!
 
 	def index
 
-		@steps = Step.all 
+		@steps = Step.filter(params[:query])
 	end
 
 	def new
@@ -32,10 +32,14 @@ before_action :authenticate_user!
 	end
 
 	def show 
+
 		@step = Step.find(params[:id])
-		 
+		@posts = Post.filter(params[:query], params[:id] ) 
+		# @step.posts 
+
 		
 	end 
+
 
 	private
 

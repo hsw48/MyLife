@@ -6,10 +6,17 @@
 
 <%= link_to "Add Post", "/posts/new?step_id=#{params[:id]}", class: 'btn btn-info' %>
 </br></br>
+<%= form_tag "/steps/#{params[:id]}", method: 'GET' do %>
+	
+	<%= text_field_tag 'query', params[:query_posts], placeholder: "Search Posts" %>
+
+	<%= link_to "See all", "/steps/#{params[:id]}" %>
+
+<% end %>
 
 <p>
 
-<% @step.posts.each do |post| %>
+<% @posts.each do |post| %>
 <div>
 	<%= post.body %>
 </div>
