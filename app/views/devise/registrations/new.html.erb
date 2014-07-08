@@ -1,3 +1,11 @@
+<h1>Welcome to My Life!</h1>
+<div class="welcometurtle">
+<%= image_tag "turtle.png"%>
+</div>
+<br/>
+<h4 class="welcomeinfo">My Life is an interactive, long-term journaling application that documents your life and your evolving identity. It is a way to witness the evolution of yourself; both for your benefit as well as future generations'.</h4> 
+
+
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -15,4 +23,3 @@
   <div><%= f.submit "Sign up" %></div>
 <% end %>
 
-<%= render "devise/shared/links" %>

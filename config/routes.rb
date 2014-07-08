@@ -24,7 +24,7 @@ resources :welcomes, :only => [:index]
 
   # You can have the root of your site routed with "root"
   
-  root 'welcomes#index'
+  root 'homes#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
