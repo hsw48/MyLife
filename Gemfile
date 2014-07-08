@@ -2,13 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails_12factor', group: :production
 
-gem 'binding_of_caller'
-
-gem 'better_errors', group: :development
-
-gem 'rails_12factor', group: :production
-
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 gem 'bootstrap-sass'
 
