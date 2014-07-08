@@ -2,13 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails_12factor', group: :production
 
-gem 'binding_of_caller'
-
-gem 'better_errors', group: :development
-
-gem 'rails_12factor', group: :production
-
 gem 'devise'
+
+gem 'pry-rails'
 
 gem 'bootstrap-sass'
 
@@ -21,7 +17,7 @@ gem 'rails', '4.1.1'
 
 gem 'sqlite3', group: :development 
 
-# gem 'pg', group: :production
+gem 'pg', group: :production
 
 
 # Use SCSS for stylesheets

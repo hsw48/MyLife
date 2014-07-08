@@ -24,9 +24,10 @@
 	
 	<div class="homebrowsebox">
 		<ul>
-			<%= @years_array.each do |year|  %>
+			<% @years_array.each do |year|  %>
 			<li>	
-				<%= link_to year.to_s, "/steps/", :method => :get %> 
+					
+				<%= link_to year.to_s, "/steps?year=#{year}", :method => :get %> 
 			</li>
 		</ul>
 		<% end  %> 

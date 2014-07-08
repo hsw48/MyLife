@@ -4,6 +4,10 @@ class PostsController < ApplicationController
 		@post = Post.new 
 	end 
 
+	def index
+		@posts = Post.all 
+	end 
+
 	def create
 		# find the step that we are interested (Step.find(...))
 
