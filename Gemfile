@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'rails_12factor', group: :production
 
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 gem 'pry-rails'
 

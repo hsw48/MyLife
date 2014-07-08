@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140707150825) do
+ActiveRecord::Schema.define(version: 20140708103727) do
 
   create_table "posts", force: true do |t|
     t.integer  "step_id"
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20140707150825) do
     t.string   "tags"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.date     "event_date", default: '2014-07-06'
+    t.date     "event_date", default: '2014-07-07'
   end
 
   create_table "users", force: true do |t|
@@ -48,6 +48,8 @@ ActiveRecord::Schema.define(version: 20140707150825) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "provider"
+    t.string   "uid"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
