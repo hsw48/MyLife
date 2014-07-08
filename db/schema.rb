@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20140708103727) do
     t.string   "tags"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.date     "event_date", default: '2014-07-07'
+    t.date     "event_date", default: '2014-07-06'
   end
 
   create_table "users", force: true do |t|
