@@ -22,7 +22,7 @@
 </div>
 <div>
 <% @steps.each do |step| %>
-	<li>
+	<li class="steptitles">
 		<%= link_to step.title, step_path(step), :method => :get %>
 		</br>
 	</li>
