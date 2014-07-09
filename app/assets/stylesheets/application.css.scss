@@ -10,7 +10,7 @@ body {background-color: #8DB477;margin:3%;}
 div {border-radius: 10px;background-color: #DDDABE;}
 li {list-style: none}
 h1 {text-align:center; text-decoration: underline;font-family: 'Pacifico', cursive;color: #78684e}
-a {font-size: 1.5em}
+a {font-size: 1em}
 h4, h2, li, a, p {font-family: 'Roboto Slab', serif; color: #78684e;}
 
 a:hover {color: #8DB477; text-decoration: underline}
@@ -39,11 +39,13 @@ a:hover {color: #8DB477; text-decoration: underline}
 	display:inline-block;height:150px;}
 
 .homebrowsebox {border: #78684e solid 2px;display:inline-block;width:30%;padding:5%;
-	float: right;font-size: 1.5em;list-style: none}
+	float: right;font-size: 1.5em;}
+.homebrowseyears {font-size: 1.5em}
 
 .homepromptsbox {border: #78684e solid 2px; width:65%;padding:3%;padding-bottom: 0%}
 
 /* Steps Page */
+.steptitles {font-size:2em;}
 .stepinfo {text-align: center}
 .stepsdeletebutton {text-align: right}
 
