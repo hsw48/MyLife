@@ -16,7 +16,7 @@
 </p>
 
 <div class="homecreatenewstepbutton">
-				<%= link_to "Create New", new_step_path, class: 'btn btn-info' %>
+				<%= link_to "Create New Step", new_step_path, class: 'btn btn-info' %>
 </div>
 
 
@@ -24,7 +24,7 @@
 		<h2>Reminisce</h2>
 	</div>
 	<div class="homebrowse">
-		<h2>Browse</h2>
+		<h2>Browse Steps</h2>
 	</div>
 	<div class="homereminiscebox">
 
@@ -46,6 +46,8 @@
 
 	</div>
 	
+	<!-- ["2012", "2013"] -->
+
 	<div class="homebrowsebox">
 		<ul>
 			<% @years_array.each do |year|  %>

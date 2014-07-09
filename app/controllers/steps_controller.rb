@@ -4,8 +4,18 @@ before_action :authenticate_user!
 
 
 	def index
+		if params[:year]
+			# filter by year and show the steps only from this year
+				@steps = Step.filter_by_year(params[:year])
+				
 
-		@steps = Step.filter(params[:query])
+		else 
+			# see the steps normally (maybe never allow this to happen in the future)
+			@steps = Step.filter(params[:query])
+
+		end
+
+
 	end
 
 	def new
