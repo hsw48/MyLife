@@ -1,10 +1,15 @@
-
+<%= link_to image_tag("turtle.png"), "/homes" %> 
 
 <h1> <%= @step.title %> </h1>
 
 
-
+<div class="postaddpost">
 <%= link_to "Add Post", "/posts/new?step_id=#{params[:id]}", class: 'btn btn-info' %>
+</div>
+
+
+<%= link_to "Back to Steps",  "/steps?year=#{@step.event_date.year}" %> 
+
 </br></br>
 <%= form_tag "/steps/#{params[:id]}", method: 'GET' do %>
 	
@@ -14,9 +19,10 @@
 
 <% end %>
 
+</br>
+</br>
+
 <p>
-
-
 <% @posts.each do |post| %>
 <div>
 	<%= post.body %>
@@ -35,7 +41,7 @@ Created at: <%= post.created_at.strftime("%m/%d/%Y") %>
 <% end %>
 
 </p>
-<%= link_to "Back", "/steps" %> 
+
 
 
 	

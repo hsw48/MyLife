@@ -1,9 +1,10 @@
 
 <div>
-<%= link_to "Home", "/homes" %> 
+<%= link_to image_tag("turtle.png"), "/homes" %> 
 </div>
 
-<h1>Steps</h1>
+
+<h1> Steps of <%= params[:year] %> </h1>
 
 	<%= form_tag "/steps", method: 'GET' do %>
 
@@ -18,7 +19,7 @@
 
 
 <div class="homecreatenewstepbutton">
-	<%= link_to "Create New", new_step_path, class: 'btn btn-info' %>
+	<%= link_to "Create New Step", new_step_path, class: 'btn btn-info' %>
 </div>
 <div>
 <% @steps.each do |step| %>

@@ -25,20 +25,22 @@ before_action :authenticate_user!
 	def create
 		@step = Step.new(step_params)
 
-		@post = Post.new(:body => params[:body])
+		@post = Post.new(body: params[:body])
 		@post.save
 
 		@step.posts << @post
 
 		@step.save
-		redirect_to steps_path
+
+
+		redirect_to "/steps?year=#{@step.event_date.year}"
 	end
 
 	def destroy
 		@step = Step.find(params[:id])
 		@step.destroy
 
-		redirect_to steps_path
+		redirect_to "/steps?year=#{@step.event_date.year}"
 	end
 
 	def show 
