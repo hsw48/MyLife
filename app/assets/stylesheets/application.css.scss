@@ -25,18 +25,20 @@ a:hover {color: #8DB477; text-decoration: underline}
 .welcometurtle {text-align: center}
 
 /* Home Page */
+
 .container {padding:3%;}
 .hometurtle {text-align: center}
 .homecreatenewstepbutton {text-align: right}
 .btn {background-color:#8DB477;}
-
+.homesettings {text-align: right;}
+.homeprofilepicture {text-align: left;}
 .homemylife {}
 
 .homereminisce {width:60%;display:inline-block;}
 .homebrowse {width:30%;display:inline-block;text-align: right}
 
 .homereminiscebox {border: #78684e solid 2px; width:65%;padding:5%;
-	display:inline-block;height:150px;}
+	display:inline-block;}
 
 .homebrowsebox {border: #78684e solid 2px;display:inline-block;width:30%;padding:5%;
 	float: right;font-size: 1.5em;}

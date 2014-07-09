@@ -15,12 +15,17 @@ class User < ActiveRecord::Base
       if registered_user
         return registered_user
       else
-        user = User.create(name:auth.extra.raw_info.name,
+        user = User.create(#name:auth.extra.raw_info.name,
                             provider:auth.provider,
                             uid:auth.uid,
                             email:auth.info.email,
                             password:Devise.friendly_token[0,20],
                           )
       end    end
+  end
+  def profile_pic
+      if self.provider == "facebook" && self.uid
+      "https://graph.facebook.com/#{self.uid}/picture?width=160&height=140"
+      end
   end
 end 
