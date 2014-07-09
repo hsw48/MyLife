@@ -4,6 +4,18 @@ class HomesController < ApplicationController
 
 
 	def index
+
+
+		@rem_array = []
+				@posts = Post.all
+				@posts.each do |post|
+				@rem_array << post.body 
+				@rem_array = @rem_array.sample(5)
+
+				end
+
+
+
 		@years_array = []
 
 			Step.all.each do |step|

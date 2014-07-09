@@ -4,8 +4,17 @@ class PostsController < ApplicationController
 		@post = Post.new 
 	end 
 
+
+
 	def index
-		@posts = Post.all 
+		@rem_array = []
+		@posts = Post.all
+		@posts.each do |post|
+		@rem_array << post.body 
+		@rem_array.sample(5)
+
+		end
+
 	end 
 
 	def create
