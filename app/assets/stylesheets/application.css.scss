@@ -25,14 +25,14 @@ a:hover {color: #8DB477; text-decoration: underline}
 .welcometurtle {text-align: center}
 
 /* Home Page */
-
+.homeheader {;}
 .container {padding:3%;}
 .hometurtle {text-align: center}
 .homecreatenewstepbutton {text-align: right}
 .btn {background-color:#8DB477;}
 .homesettings {text-align: right;}
-.homeprofilepicture {text-align: left;}
-.homemylife {}
+.homeprofilepicture {text-align: left;border: #78684e solid 2px;;width:190px;height:165px;padding:1%;float:left;}
+.homemylife {font-size: 5em;}
 
 .homereminisce {width:60%;display:inline-block;}
 .homebrowse {width:30%;display:inline-block;text-align: right}
@@ -44,8 +44,11 @@ a:hover {color: #8DB477; text-decoration: underline}
 	float: right;font-size: 1.5em;}
 .homebrowseyears {font-size: 1.5em}
 
-.homepromptsbox {border: #78684e solid 2px; width:65%;padding:3%;padding-bottom: 0%}
+.homepromptsbox {border: #78684e solid 2px; width:75%;padding:3%;padding-bottom: 0%}
 
+.notice {margin:0px;}
+
+.footer {border: #78684e solid 2px;text-align: center;border-radius: 5px}
 /* Steps Page */
 .steptitles {font-size:2em;}
 .stepinfo {text-align: center}
