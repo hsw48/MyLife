@@ -7,7 +7,27 @@ class Step < ActiveRecord::Base
 
 	    query.blank? ? Step.all : Step.where("lower(title) LIKE '%#{query}%'")
 
-	  end 
+
+	  end  
+
+	  def self.filter_by_year(step_year)
+
+	  	steps_array = []
+
+	  		Step.all.each do |step| 
+
+
+		  		if step.event_date.year == step_year.to_i
+		  			steps_array << step 		
+		  		end
+
+	  		# Loop through all the steps and find those where event_date's year is the same as 'year' from params
+				end 
+				 steps_array
+	  end
+
+	  # find all the steps where the event_date's year is the same as the year searched for 
+	  # Step.where(event_date: => "#{year}")
 
 # ternary operater
 
