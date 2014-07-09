@@ -21,14 +21,20 @@
 	</div>
 	<div class="homereminiscebox">
 
-		<% @rem_array.each do |post|  %>
-				<div>
-					<%= post  %>
-				</div>
 
-				</br>
-				
-			<% end %>
+
+	<% @rem_hash.each do |step| %>
+			<div>
+				<%= step.to_s %>
+			</div>
+			</br>
+
+		<% end %>
+
+<!-- convert each key and val to a string and put separation in between them
+ -->
+
+
 
 
 	</div>

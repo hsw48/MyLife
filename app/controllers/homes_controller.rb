@@ -1,4 +1,4 @@
-class HomesController < ApplicationController
+	class HomesController < ApplicationController
 	before_action :authenticate_user!
 	
 
@@ -6,11 +6,20 @@ class HomesController < ApplicationController
 	def index
 
 
-		@rem_array = []
-				@posts = Post.all
-				@posts.each do |post|
-				@rem_array << post.body 
-				@rem_array = @rem_array.sample(5)
+
+		@rem_hash = {}
+			@steps = Step.all 
+			@steps.each do |step|
+			@rem_hash[step.title] = step.event_date
+			@rem_hash = @rem_hash.to_a.sample(5).to_h
+
+
+
+		# @rem_array = []
+		# 		@posts = Post.all
+		# 		@posts.each do |post|
+		# 		@rem_array << post.body 
+		# 		@rem_array = @rem_array.sample(5)
 
 				end
 
