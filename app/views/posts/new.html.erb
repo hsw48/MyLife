@@ -1,5 +1,5 @@
 
-<%= link_to "Back", posts_path %>
+<%= link_to "Back", steps_path %>
 <h1>Add a Post</h1>
 
 <%= form_for(  @post  ) do |f| %>
@@ -8,7 +8,7 @@
 	<input type="hidden" name="step_id" value=  <%= "#{params[:step_id]}" %>  >
 </br>
 
-<%= text_area_tag :body,:required => true, nil, :cols => "50", :rows => "5" %>
+<%= text_area_tag :body,nil, :cols => "50", :rows => "5",:required => true %>
 <%= f.submit "Submit" %>
 
 
