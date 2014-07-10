@@ -37,18 +37,23 @@ a:hover {color: #8DB477; text-decoration: underline}
 .homereminisce {width:60%;display:inline-block;}
 .homebrowse {width:30%;display:inline-block;text-align: right}
 
-.homereminiscebox {border: #78684e solid 2px; width:65%;padding:5%;
+.homereminiscebox {border: #78684e solid 2px; width:65%;padding:1%;
 	display:inline-block;}
+.homereminiscebox a{font-size: 1.5em;}
+/*#myCarousel {border: #78684e solid 2px; width:65%;padding:3%;
+	display:inline-block;}*/
+.homereminiscetitles {}
+.homereminiscedates {text-align:right;}
 
 .homebrowsebox {border: #78684e solid 2px;display:inline-block;width:30%;padding:5%;
 	float: right;font-size: 1.5em;}
 .homebrowseyears {font-size: 1.5em}
 
-.homepromptsbox {border: #78684e solid 2px; width:75%;padding:3%;padding-bottom: 0%}
+.homepromptsbox {border: #78684e solid 2px; width:68%;padding:3%;padding-bottom: 0%}
 
 .notice {margin:0px;}
 
-.footer {border: #78684e solid 2px;text-align: center;border-radius: 5px}
+.footer {text-align: center;border-radius: 5px}
 /* Steps Page */
 .steptitles {font-size:2em;}
 .stepinfo {text-align: center}

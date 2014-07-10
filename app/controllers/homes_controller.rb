@@ -42,7 +42,11 @@
 						"Who was your biggest childhood celebrity crush?",
 						"What do you think your parents could have done a better job of?",
 						"When was the first time you fell in love?",
-						"What do you wish you spent more time doing as a kid?" 
+						"What do you wish you spent more time doing as a kid?",
+						"Describe the first real job you had.",
+						"What are some of the most important single experiences of your life?",
+						"Who is someone that you wish you hadn't fallen out of touch with?",
+		 
 
 						]	
 
