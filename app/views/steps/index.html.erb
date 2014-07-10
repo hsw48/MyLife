@@ -6,9 +6,35 @@
 	<%= text_field_tag 'query', params[:query], placeholder: "Search Steps" %>
 	<%= link_to "See all", "/steps" %>
 <% end %>
+
+<div>
+	<h2>Tags</h2>
+</div>
+
 <div class="homecreatenewstepbutton">
 	<%= link_to "Create New Step", new_step_path, class: 'btn btn-info' %>
+</div>	
+
+
+<div class="btn-group">
+    <button data-toggle="dropdown" class="btn dropdown-toggle">Filter Tags<span class="caret"></span></button>
+    <ul class="dropdown-menu">
+        <li><a href="#">Travel</a></li>
+        <li><a href="#">Journal</a></li>
+        <li><a href="#">Hobbies</a></li>
+        <li><a href="#">Bucket List</a></li>
+        <li><a href="#">First Time I...</a></li>
+        <li><a href="#">Dream</a></li>
+        <li><a href="#">Favorites</a></li>
+    </ul>
 </div>
+
+
+
+
+
+
+
 <div>
 	<% @steps.each do |step| %>
 		<li class="steptitles">
