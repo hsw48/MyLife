@@ -5,7 +5,7 @@
 
 /* Whole Site */
 .alert {padding:0;margin:0;}
-body {background-color: #8DB477;margin:3%;}
+body {background-color: #8DB477;margin:3%;margin-left:10%;margin-right:10%;}
 
 div {border-radius: 10px;background-color: #DDDABE;}
 li {list-style: none}
@@ -32,12 +32,12 @@ a:hover {color: #8DB477; text-decoration: underline}
 .btn {background-color:#8DB477;}
 .homesettings {text-align: right;}
 .homeprofilepicture {text-align: left;border: #78684e solid 2px;;width:190px;height:165px;padding:1%;float:left;}
-.homemylife {font-size: 5em;}
+.homemylife {text-align:center;font-size: 5em;}
 
 .homereminisce {width:60%;display:inline-block;}
 .homebrowse {width:30%;display:inline-block;text-align: right}
 
-.homereminiscebox {border: #78684e solid 2px; width:65%;padding:1%;
+.homereminiscebox {border: #78684e solid 2px; width:68%;padding:1%;
 	display:inline-block;}
 .homereminiscebox a{font-size: 1.5em;}
 /*#myCarousel {border: #78684e solid 2px; width:65%;padding:3%;
@@ -49,7 +49,8 @@ a:hover {color: #8DB477; text-decoration: underline}
 	float: right;font-size: 1.5em;}
 .homebrowseyears {font-size: 1.5em}
 
-.homepromptsbox {border: #78684e solid 2px; width:68%;padding:3%;padding-bottom: 0%}
+.homepromptsbox {border: #78684e solid 2px; width:68%;padding:3%;padding-bottom: 0%;}
+.homepromptsprompts {}
 
 .notice {margin:0px;}
 
@@ -58,8 +59,16 @@ a:hover {color: #8DB477; text-decoration: underline}
 .steptitles {font-size:2em;}
 .stepinfo {text-align: center}
 .stepsdeletebutton {text-align: right}
-
+.btn {text-align: right}
+.stepstags {text-align: center}
+.stepstagslabel {text-align: center; color: black;}
+.stepstitlelabel { color: black;float:left;}
+.index-row {
+	width: 100%;
+}
+.middle-col {text-align: center;background-color:#DDDABE }
 hr {height:1px;}
+.seeall {font-size: 1.5em}
 
 /* Posts Page */
 .postaddpost {text-align: right}
