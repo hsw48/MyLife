@@ -32,7 +32,6 @@ before_action :authenticate_user!
 
 		@step.save
 
-
 		redirect_to "/steps?year=#{@step.event_date.year}"
 	end
 

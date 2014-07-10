@@ -31,31 +31,63 @@
 	<div class="homebrowse">
 		<h2>Browse Steps</h2>
 	</div>
+
 	<div class="homereminiscebox">
 
 
 
+		<div id="myCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active">
+    
 
-	<%  @steps.sample(5).each do |step| %>
+    </li>
+    <li data-target="#myCarousel" data-slide-to="1">
+    	
+</li>
+    <li data-target="#myCarousel" data-slide-to="2">
+    
+</li>
+  </ol>
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item">	<%  @steps.sample(5).each do |step| %>
 
-		<div>
-		<%= link_to step.title, "/steps/#{step.id}" %>    
-			
+		<div class="homereminiscetitles">
+			<%= link_to step.title, "/steps/#{step.id}" %>
 		</div>
-		<%= step.event_date.strftime("%B %d, %Y") %>
-		<div>
-	
+		<div class="homereminiscedates">
+			<%= step.event_date.strftime("%B %d, %Y") %>
 		</div> 
 
-	<% end %>
+	<% end %></div>
+    <div class="item">	<%  @steps.sample(5).each do |step| %>
 
+		<div class="homereminiscetitles">
+			<%= link_to step.title, "/steps/#{step.id}" %>
+		</div>
+		<div class="homereminiscedates">
+			<%= step.event_date.strftime("%B %d, %Y") %>
+		</div> 
 
+	<% end %></div>
+    <div class="item">	<%  @steps.sample(5).each do |step| %>
 
+		<div class="homereminiscetitles">
+			<%= link_to step.title, "/steps/#{step.id}" %>
+		</div>
+		<div class="homereminiscedates">
+			<%= step.event_date.strftime("%B %d, %Y") %>
+		</div> 
 
+	<% end %></div>
+  </div>
+  <!-- Carousel nav -->
+<!--   <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a> -->
+</div>
 
-
-
-
+	
 	</div>
 	
 	<!-- ["2012", "2013"] -->
