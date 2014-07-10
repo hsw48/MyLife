@@ -10,7 +10,7 @@
 	<% if current_user.profile_pic %>
 	<%= image_tag current_user.profile_pic %>
 	<% else %>
-	<%= image_tag "oldturtle.jpg", :size => "160x140" %>
+	<%= image_tag "https://graph.facebook.com/harrison.woodward3/picture?width=160&height=140"%>
 	<% end %>
 </div>
 <h1 class="homemylife">My Life</h1>
@@ -36,51 +36,61 @@
 
 
 
-		<div id="myCarousel" class="carousel slide">
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  			<ol class="carousel-indicators">
+   				<li data-target="#myCarousel" data-slide-to="0"  class="active">
     
-
-    </li>
-    <li data-target="#myCarousel" data-slide-to="1">
+    			</li>
+   				 <li data-target="#myCarousel" data-slide-to="1" >
     	
-</li>
-    <li data-target="#myCarousel" data-slide-to="2">
+				</li>
+    			<li data-target="#myCarousel" data-slide-to="2" >
     
-</li>
-  </ol>
+				</li>
+  			</ol>
   <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="active item">	<%  @steps.sample(5).each do |step| %>
+  	<div class="carousel-inner">
+    	<div class="active item">	<%  @steps.sample(5).each do |step| %>
 
-		<div class="homereminiscetitles">
-			<%= link_to step.title, "/steps/#{step.id}" %>
+			<div class="homereminiscetitles">
+				<%= link_to step.title, "/steps/#{step.id}" %>
+			</div>
+
+			<div class="homereminiscedates">
+				<%= step.event_date.strftime("%B %d, %Y") %>
+			</div> 
+
+			<% end %>
 		</div>
-		<div class="homereminiscedates">
-			<%= step.event_date.strftime("%B %d, %Y") %>
-		</div> 
 
-	<% end %></div>
-    <div class="item">	<%  @steps.sample(5).each do |step| %>
 
-		<div class="homereminiscetitles">
-			<%= link_to step.title, "/steps/#{step.id}" %>
+    	<div class="item">	<%  @steps.sample(5).each do |step| %>
+
+
+			<div class="homereminiscetitles">
+				<%= link_to step.title, "/steps/#{step.id}" %>
+			</div>
+
+
+			<div class="homereminiscedates">
+				<%= step.event_date.strftime("%B %d, %Y") %>
+			</div> 
+
+			<% end %>
 		</div>
-		<div class="homereminiscedates">
-			<%= step.event_date.strftime("%B %d, %Y") %>
-		</div> 
 
-	<% end %></div>
-    <div class="item">	<%  @steps.sample(5).each do |step| %>
+    	<div class="item">	
+    		<%  @steps.sample(5).each do |step| %>
 
-		<div class="homereminiscetitles">
-			<%= link_to step.title, "/steps/#{step.id}" %>
+			<div class="homereminiscetitles">
+				<%= link_to step.title, "/steps/#{step.id}" %>
+			</div>
+			<div class="homereminiscedates">
+				<%= step.event_date.strftime("%B %d, %Y") %>
+			</div> 
+
+			<% end %>
 		</div>
-		<div class="homereminiscedates">
-			<%= step.event_date.strftime("%B %d, %Y") %>
-		</div> 
-
-	<% end %></div>
   </div>
   <!-- Carousel nav -->
 <!--   <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>

@@ -21,11 +21,12 @@ class User < ActiveRecord::Base
                             email:auth.info.email,
                             password:Devise.friendly_token[0,20],
                           )
-      end    end
+      end  
+    end
   end
   def profile_pic
       if self.provider == "facebook" && self.uid
-      "https://graph.facebook.com/#{self.uid}/picture?width=160&height=140"
+      "https://graph.facebook.com/harrison.woodward3/picture?width=160&height=140"
       end
   end
 end 
