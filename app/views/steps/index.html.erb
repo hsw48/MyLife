@@ -1,44 +1,32 @@
-
 <div>
-<%= link_to image_tag("turtle.png"), "/homes" %> 
+	<%= link_to image_tag("turtle.png"), "/homes" %>
 </div>
-
-
 <h1> Steps of <%= params[:year] %> </h1>
-
-	<%= form_tag "/steps", method: 'GET' do %>
-
-		<%= text_field_tag 'query', params[:query], placeholder: "Search Steps" %>
-
-
-
-		<%= link_to "See all", "/steps" %>
-
-	<% end %>
-
-
-
+<%= form_tag "/steps", method: 'GET' do %>
+	<%= text_field_tag 'query', params[:query], placeholder: "Search Steps" %>
+	<%= link_to "See all", "/steps" %>
+<% end %>
 <div class="homecreatenewstepbutton">
 	<%= link_to "Create New Step", new_step_path, class: 'btn btn-info' %>
 </div>
 <div>
-<% @steps.each do |step| %>
-	<li class="steptitles">
-		<%= link_to step.title, step_path(step), :method => :get %>
+	<% @steps.each do |step| %>
+		<li class="steptitles">
+			<%= link_to step.title, step_path(step), :method => :get %>
+			</br>
+		</li>
 		</br>
-	</li>
-	</br><p>
-		Date:	<%= step.event_date.strftime("%m/%d/%Y") %> 
-	</p>
-		<p class="stepsdeletebutton">
-		<%= link_to image_tag("trashcan.png"), step_path(step), :method => :delete %>
-		</br>
-
-		
+		<p>
+			Date: <%= step.event_date.strftime("%m/%d/%Y") %>
 		</p>
-	<hr color="#8DB477">
-	
-<% end %>
-</br>
+		<p class="stepstags">
+			<%= step.tags %>
+		</p>
+		<p class="stepsdeletebutton">
+			<%= link_to image_tag("trashcan.png"), step_path(step), :method => :delete %>
+		</br>
+		</p>
+		<hr color="#8DB477">
+	<% end %>
+	</br>
 </div>
-

@@ -20,18 +20,15 @@ before_action :authenticate_user!
 
 	def new
 		@step = Step.new
+		@tags_array = ["", "Travel", "Journal", "Hobbies", "Bucket List", "First Time I...", "Dream", "Favorites"]
 	end
-	
+
 	def create
 		@step = Step.new(step_params)
-
 		@post = Post.new(body: params[:body])
-		@post.save
-
 		@step.posts << @post
-
+		@post.save
 		@step.save
-
 
 		redirect_to "/steps?year=#{@step.event_date.year}"
 	end
@@ -46,19 +43,20 @@ before_action :authenticate_user!
 	def show 
 
 		@step = Step.find(params[:id])
+
+
+
+
 		@posts = Post.filter(params[:query], params[:id] ) 
 		# @step.posts 
 
 		
 	end 
 
-
 	private
 
-	def step_params
-		params.require(:step).permit(:title, :event_date)
-	end
-	
-
+		def step_params
+			params.require(:step).permit(:title, :event_date, :tags)
+		end
 
 end 
