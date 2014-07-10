@@ -36,16 +36,22 @@
 
 
 
-	<% @rem_hash.each do |step| %>
-			<div>
-				<%= step %>
-			</div>
-			</br>
+	<%  @steps.sample(5).each do |step| %>
 
-		<% end %>
+		<div>
+		<%= link_to step.title, "/steps/#{step.id}" %>    
+			
+		</div>
+		<%= step.event_date.strftime("%B %d, %Y") %>
+		<div>
+	
+		</div> 
 
-<!-- convert each key and val to a string and put separation in between them
- -->
+	<% end %>
+
+
+
+
 
 
 
