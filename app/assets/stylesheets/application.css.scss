@@ -18,6 +18,9 @@ a:hover {color: #8DB477; text-decoration: underline}
 .signin {text-align: right;}
 
 /* Welcome Page */
+.welcomemylife {font-family: 'Roboto Slab', serif;text-align: center;}
+.welcomemylifewords {}
+.welcomemylifeline {position:inline-block;}
 
 .welcomesignup {float:right;}
 .welcomeinfo {width:75%;text-align: right;float: right;}
@@ -31,14 +34,14 @@ a:hover {color: #8DB477; text-decoration: underline}
 .homecreatenewstepbutton {text-align: right}
 .btn {background-color:#8DB477;}
 .homesettings {text-align: right;}
-.homeprofilepicture {text-align: left;border: #78684e solid 2px;;width:190px;height:165px;padding:1%;float:left;}
-.homemylife {font-size: 5em;}
+.homeprofilepicture {text-align: left;border: #78684e solid 2px;width:190px;height:165px;padding:1%;float:left;}
+.homemylife {text-align:center;font-size: 5em;}
 
 .homereminisce {width:60%;display:inline-block;}
 .homebrowse {width:30%;display:inline-block;text-align: right}
 
-.homereminiscebox {border: #78684e solid 2px; width:65%;padding:1%;
-	display:inline-block;}
+.homereminiscebox {border: #78684e solid 2px; width:68%;padding:1%;
+	display:inline-block;background-color: #74A570}
 .homereminiscebox a{font-size: 1.5em;}
 /*#myCarousel {border: #78684e solid 2px; width:65%;padding:3%;
 	display:inline-block;}*/
@@ -46,10 +49,12 @@ a:hover {color: #8DB477; text-decoration: underline}
 .homereminiscedates {text-align:right;}
 
 .homebrowsebox {border: #78684e solid 2px;display:inline-block;width:30%;padding:5%;
-	float: right;font-size: 1.5em;}
+	float: right;font-size: 1.5em;padding-top:3%;padding-bottom: 3%;background-color: #8DB477}
+.homebrowsebox a:hover{color:#ecead9;}
 .homebrowseyears {font-size: 1.5em}
 
-.homepromptsbox {border: #78684e solid 2px; width:68%;padding:3%;padding-bottom: 0%}
+.homepromptsbox {border: #78684e solid 4px; width:68%;padding:3%;padding-bottom: 0%;}
+.homepromptsprompts {}
 
 .notice {margin:0px;}
 
@@ -58,12 +63,21 @@ a:hover {color: #8DB477; text-decoration: underline}
 .steptitles {font-size:2em;}
 .stepinfo {text-align: center}
 .stepsdeletebutton {text-align: right}
-
-hr {height:1px;}
+.btn {text-align: right}
+.stepstags {text-align: center;font-size: 1.5em}
+.stepstagslabel {text-align: center; color: black;}
+.stepstitlelabel { color: black;float:left;}
+.index-row {
+	width: 100%;
+}
+.middle-col {text-align: center;background-color:#DDDABE }
+hr {height:1px;color:#8DB477;}
+.seeall {font-size: 1.5em}
 
 /* Posts Page */
 .postaddpost {text-align: right}
 .postsdeletebutton {text-align: right}
+.postbody {width:60%;}
 
 
 

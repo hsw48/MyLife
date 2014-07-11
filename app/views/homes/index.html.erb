@@ -7,11 +7,8 @@
 </div>
 <div class="homeheader">
 <div class="homeprofilepicture">
-	<% if current_user.profile_pic %>
-	<%= image_tag current_user.profile_pic %>
-	<% else %>
-	<%= image_tag "https://graph.facebook.com/harrison.woodward3/picture?width=160&height=140"%>
-	<% end %>
+	<%= image_tag "george.jpg", :size => "166x141" %>
+	
 </div>
 <h1 class="homemylife">My Life</h1>
 <p class="hometurtle">
@@ -118,10 +115,11 @@
 	<h2>Prompts</h2>
 </div>
 <div class="homepromptsbox">
+
 <% @three_prompts %> 
 
 			<% @three_prompts.each do |prompt|  %>
-				<div>
+				<div class="homepromptsprompts">
 					<%= link_to prompt, new_step_path, class: 'btn btn-info'  %>
 				</div>
 
