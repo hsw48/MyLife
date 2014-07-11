@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140708103727) do
+ActiveRecord::Schema.define(version: 20140711115055) do
 
   create_table "posts", force: true do |t|
     t.integer  "step_id"
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20140708103727) do
     t.string   "tags"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.date     "event_date", default: '2014-07-06'
+    t.date     "event_date"
   end
 
   create_table "users", force: true do |t|
