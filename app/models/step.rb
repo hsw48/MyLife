@@ -3,12 +3,9 @@ class Step < ActiveRecord::Base
 	has_many :posts, dependent: :destroy
 
 
-	 def after_initialize
-	 	if !self.event_date
-  	  self.event_date ||= Date.today if new_record?
-
-  	  	end 
-  	end
+	 def after_save
+	 	
+  	 end
 
 
 

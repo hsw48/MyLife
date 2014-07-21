@@ -7,15 +7,21 @@ before_action :authenticate_user!
 		if params[:year]
 			# filter by year and show the steps only from this year
 				@steps = Step.filter_by_year(params[:year])
-				
-
 		else 
 			# see the steps normally (maybe never allow this to happen in the future)
 			@steps = Step.filter(params[:query])
 
 		end
+	end
 
+	def edit 
+		@step = Step.find(params[:id])
+		@tags_array = ["", "Travel", "Journal", "Hobbies", "Bucket List", "First Time I...", "Dream", "Favorites"]
+	end
 
+	def update
+		Step.find(params[:id]).update(step_params)
+		redirect_to steps_path
 	end
 
 	def new
@@ -27,9 +33,12 @@ before_action :authenticate_user!
 		@step = Step.new(step_params)
 		@post = Post.new(body: params[:body])
 		@step.posts << @post
+		if !@step.event_date
+  	 		@step.event_date = Date.today
+  	  	end 
 		@post.save
 		@step.save
-
+	
 		redirect_to "/steps?year=#{@step.event_date.year}"
 	end
 

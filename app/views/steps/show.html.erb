@@ -23,12 +23,17 @@
 </br>
 
 <p>
+	<div class="postedit">
+	<%= link_to "edit", edit_step_path %>
+</div>
 <% @posts.each do |post| %>
+
 <div class="postbody">
 	<%= post.body %>
 </div>
 
 <div class="postsdeletebutton">
+	
 	<%= link_to image_tag("trashcan.png"), post_path(post), :method => :delete %>
 </div>
 
