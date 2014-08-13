@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails_12factor', group: :production
+gem 'sqlite3', group: :development 
+gem 'pg', group: :production
 
 gem 'devise'
 gem 'omniauth'
@@ -17,7 +19,8 @@ gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
 
 
-gem 'sqlite3', group: :development 
+
+
 
 # gem 'pg', group: :production
 
